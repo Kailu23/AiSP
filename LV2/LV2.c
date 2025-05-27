@@ -36,20 +36,20 @@ void FreeLinkedList(Node* head) {
 		current = nextNode;
 	}
 }
-void GenerateIntArray(int array[], int N, int lowerBound, int upperBound) {
+void GenerateIntArray(int array[], int size, int lowerBound, int upperBound) {
 	for (int i = 0; i < N; i++) {
 		array[i] = (rand() % (upperBound - lowerBound) + lowerBound); // Random number between 10 & 99
 	}
 }
 
-int SequentialSearchRecursive(int array[], int N, int x) {
+int SequentialSearchRecursive(int array[], int size, int x) {
 	if (N == 0) {
 		return -1;
 	}
 	if (array[N - 1] == x) {
 		return N - 1;
 	}
-	return SequentialSearchRecursive(array, N - 1, x);
+	return SequentialSearchRecursive(array, size - 1, x);
 }
 
 int SequentialSearchLinkedList (Node* head, int target) {
@@ -104,4 +104,9 @@ void TestLV2()
 
 	FreeLinkedList(head);
 	return;
+}
+int main()
+{
+	TestLV2();
+	return 1;
 }

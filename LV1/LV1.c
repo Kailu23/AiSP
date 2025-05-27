@@ -104,9 +104,5 @@ int main()
     {
 		test_case(test_sizes[i]);
 	}
-
-    //LV2 test
-
-
 	return 1;
 }
