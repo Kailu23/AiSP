@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-#define N 1000
+#define N 10000
 
 
 typedef struct Node{
@@ -37,17 +37,17 @@ void FreeLinkedList(Node* head) {
 	}
 }
 void GenerateIntArray(int array[], int size, int lowerBound, int upperBound) {
-	for (int i = 0; i < N; i++) {
+	for (int i = 0; i < size; i++) {
 		array[i] = (rand() % (upperBound - lowerBound) + lowerBound); // Random number between 10 & 99
 	}
 }
 
 int SequentialSearchRecursive(int array[], int size, int x) {
-	if (N == 0) {
+	if (size == 0) {
 		return -1;
 	}
-	if (array[N - 1] == x) {
-		return N - 1;
+	if (array[size - 1] == x) {
+		return size - 1;
 	}
 	return SequentialSearchRecursive(array, size - 1, x);
 }
