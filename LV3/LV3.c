@@ -142,8 +142,8 @@ void CalculateCombinationsWithLL(int a, int b)
 int main()
 {
 	clock_t start, end;
-	int n = 20;
-	int m = 10;
+	int n = 24;
+	int m = n / 2;
 	
 	printf("With stack:\n");
 	start = clock();
