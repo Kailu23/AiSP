@@ -38,7 +38,7 @@ void FreeLinkedList(Node* head) {
 }
 void GenerateIntArray(int array[], int size, int lowerBound, int upperBound) {
 	for (int i = 0; i < size; i++) {
-		array[i] = (rand() % (upperBound - lowerBound) + lowerBound); // Random number between 10 & 99
+		array[i] = (rand() % (upperBound - lowerBound + 1) + lowerBound); // Random number between 10 & 99
 	}
 }
 
