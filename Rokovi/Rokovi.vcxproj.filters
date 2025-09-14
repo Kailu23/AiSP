@@ -18,10 +18,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Rokovi.cpp">
+    <ClCompile Include="Rokovi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="prvi.c">
+      <Filter>Source Files\Jesenski</Filter>
+    </ClCompile>
+    <ClCompile Include="drugi.c">
       <Filter>Source Files\Jesenski</Filter>
     </ClCompile>
   </ItemGroup>
